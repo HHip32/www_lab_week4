@@ -1,14 +1,20 @@
 package vn.edu.iuh.fit.models;
 
-import lombok.Data;
-import java.util.UUID;
+import lombok.*;
 
+
+
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
+
 public class Address {
-    private UUID id;
+    private String id;
+    private String street;
     private String city;
-    private Short country;
+    private int country;
     private String number;
     private String zipCode;
+
 
 }

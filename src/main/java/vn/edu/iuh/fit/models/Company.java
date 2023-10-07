@@ -1,11 +1,16 @@
 package vn.edu.iuh.fit.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.UUID;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class Company {
-    private UUID id;
+    private long id;
     private String about;
     private String email;
     private String companyName;
